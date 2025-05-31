@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import AuthContext from '../context/Authcontext';// 🔥 Import navigate
 import React, { useState, useContext } from 'react';
 
@@ -86,7 +86,7 @@ export default function Signup(props) {
                         Sign Up
                     </button>
                 </form>
-                <p className="mt-4 text-sm text-blue-600 text-center">Already have an account? <a href="/login" className="underline font-semibold">Login</a></p>
+                <p className="mt-4 text-sm text-blue-600 text-center">Already have an account? <Link to="/login" className="underline font-semibold">Login</Link></p>
             </div>
         </div>
     );
