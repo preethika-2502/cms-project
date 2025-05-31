@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Landing(props) {
     return (
@@ -8,16 +9,16 @@ function Landing(props) {
                 <nav>
                     <ul className="flex space-x-8 text-white font-medium">
                         <li>
-                            <a href="/home" className="hover:text-yellow-300 transition-colors cursor-pointer">Home</a>
+                            <Link to="/home" className="hover:text-yellow-300 transition-colors cursor-pointer">Home</Link>
                         </li>
                         <li>
-                            <a href="/Login" className="hover:text-yellow-300 transition-colors cursor-pointer">Login</a>
+                            <Link to="/Login" className="hover:text-yellow-300 transition-colors cursor-pointer">Login</Link>
                         </li>
                         <li>
-                            <a href="/sign-up" className="hover:text-yellow-300 transition-colors cursor-pointer">Signup</a>
+                            <Link to="/sign-up" className="hover:text-yellow-300 transition-colors cursor-pointer">Signup</Link>
                         </li>
                         <li>
-                            <a href="/developer" className="hover:text-yellow-300 transition-colors cursor-pointer">Contact</a>
+                            <Link to="/developer" className="hover:text-yellow-300 transition-colors cursor-pointer">Contact</Link>
                         </li>
                     </ul>
                 </nav>
@@ -59,12 +60,12 @@ function Landing(props) {
                         <p className="text-lg text-black mb-8 animate-fade-in text-center md:text-left">
                             <strong> Revolutionize your practice with our smart Doctor Appointment Management System! Effortlessly schedule, track, and manage patient visits with a sleek, intuitive dashboard. From real-time availability to automated reminders and calendar sync, everything you need is just a click away. Whether you run a clinic or a hospital, our platform helps you stay organized, reduce no-shows, and deliver better care—without the hassle. Focus on healing, while we take care of the scheduling!</strong>
                         </p>
-                        <a
-                            href="/Home"
+                        <Link
+                            to="/Home"
                             className="inline-block px-8 py-3 bg-blue-600 text-white rounded-lg shadow-lg font-semibold hover:bg-blue-700 transition-colors animate-bounce"
                         >
                             Get Started
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </main>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Developer(props) {
     return (
@@ -58,20 +59,20 @@ function Developer(props) {
                     />
                 </div>
                 <div className="flex space-x-6 mt-1">
-                    <a
-                        href="https://github.com/preethika-2502"
+                    <Link
+                        to="https://github.com/preethika-2502"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="bg-gray-900 text-white px-5 py-2 rounded-lg hover:bg-gray-700 transition font-semibold shadow"
                     >
                         GitHub
-                    </a>
-                    <a
-                        href="mailto:preethikaraju711@gmail.com"
+                    </Link>
+                    <Link
+                        to="mailto:preethikaraju711@gmail.com"
                         className="bg-blue-700 text-white px-5 py-2 rounded-lg hover:bg-blue-600 transition font-semibold shadow"
                     >
                         Contact Me
-                    </a>
+                    </Link>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Sevices(props) {
     const handleSpecialistClick = (name) => {
@@ -11,13 +12,13 @@ function Sevices(props) {
                 <nav>
                     <ul className="flex space-x-8 text-white font-medium">
                         <li>
-                            <a href="/home" className="hover:text-yellow-300 transition-colors cursor-pointer">Home</a>
+                            <Link to="/home" className="hover:text-yellow-300 transition-colors cursor-pointer">Home</Link>
                         </li>
                         <li>
-                            <a href="/developer" className="hover:text-yellow-300 transition-colors cursor-pointer">Contact</a>
+                            <Link to="/developer" className="hover:text-yellow-300 transition-colors cursor-pointer">Contact</Link>
                         </li>
                         <li>
-                            <a href="/landing" className="hover:text-yellow-300 transition-colors cursor-pointer">LogOut</a>
+                            <Link to="/landing" className="hover:text-yellow-300 transition-colors cursor-pointer">LogOut</Link>
                         </li>
                     </ul>
                 </nav>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function NotFound(props) {
     return (
@@ -51,12 +52,12 @@ function NotFound(props) {
                     Oops! The page you're looking for doesn't exist.<br />
                     Maybe you lost track of time.
                 </p>
-                <a
-                    href="/"
+                <Link
+                    tof="/"
                     className="px-10 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full shadow-xl hover:from-blue-600 hover:to-purple-600 transition-all duration-200 animate-fade-in delay-400 font-semibold text-lg tracking-wide ring-2 ring-blue-200 hover:ring-purple-300"
                 >
                     Back to Home
-                </a>
+                </Link>
                 {/* Decorative floating blobs */}
                 <div className="absolute -top-10 -left-10 w-32 h-32 bg-purple-300 opacity-30 rounded-full blur-2xl animate-blob1"></div>
                 <div className="absolute -bottom-12 -right-12 w-36 h-36 bg-blue-300 opacity-30 rounded-full blur-2xl animate-blob2"></div>
