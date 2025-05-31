@@ -2,6 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Sevices(props) {
+    //const handleSpecialistClick = (name) => {
+       // window.location.href = "/general";
+   // };
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 via-indigo-100 to-white">
             <header className="flex items-center justify-between py-6 px-10 bg-gradient-to-r from-blue-500 to-indigo-600 shadow-lg z-10 relative animate-fade-in-down">
@@ -49,7 +52,7 @@ function Sevices(props) {
                         to="/general"
                         className="flex flex-col items-center bg-white rounded-xl shadow-md p-4 hover:shadow-2xl transition-shadow duration-300 hover:scale-105 transform animate-fade-in cursor-pointer"
                         style={{ animationDelay: `${idx * 60}ms` }}
-                        onClick={() => handleSpecialistClick(spec.name)}
+                        //onClick={() => handleSpecialistClick(spec.name)}
                     >
                         <img src={spec.img} alt={spec.name} className="w-16 h-16 mb-2 drop-shadow-lg transition-transform duration-300 group-hover:scale-110" />
                         <span className="text-center text-sm font-semibold text-indigo-800">{spec.name}</span>
