@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
-import NotFound from "../pages/NotFound";
+// import NotFound from "../pages/NotFound";
 import SignUp from "../pages/SignUp";
 import Developer from '../pages/Developer';
 import Landing from '../pages/Landing';
@@ -15,7 +15,7 @@ function AppRoutes() {
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
         <Route path="/sign-up" element={<SignUp />} />
-        <Route path="*" element={<NotFound />} />
+        {/* <Route path="*" element={<NotFound />} /> */}
         <Route path="/developer" element={<Developer/>}/>
         <Route path="/landing" element={<Landing/>}/>
         <Route path="/services" element={<Sevices/>}/>
