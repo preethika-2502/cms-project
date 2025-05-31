@@ -3,7 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
 import Login from "../pages/Login";
 import NotFound from "../pages/NotFound";
-import SignUp from "../pages/SignUp";
+// import SignUp from "../pages/SignUp";
 import Developer from '../pages/Developer';
 import Landing from '../pages/Landing';
 import Sevices from '../pages/Sevices';
@@ -14,7 +14,7 @@ function AppRoutes() {
         <Route path="/" element={<Landing/>} />
         <Route path="/home" element={<Home />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/sign-up" element={<SignUp />} />
+        {/* <Route path="/sign-up" element={<SignUp />} /> */}
         <Route path="*" element={<NotFound />} />
         <Route path="/developer" element={<Developer/>}/>
         <Route path="/landing" element={<Landing/>}/>
