@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 function Sevices(props) {
-    //const handleSpecialistClick = (name) => {
-       // window.location.href = "/general";
-   // };
     return (
         <div className="min-h-screen flex flex-col bg-gradient-to-br from-blue-50 via-indigo-100 to-white">
             <header className="flex items-center justify-between py-6 px-10 bg-gradient-to-r from-blue-500 to-indigo-600 shadow-lg z-10 relative animate-fade-in-down">
