@@ -46,7 +46,7 @@ function AuthProvider({ children }) {
 		try {
 			userService.addUser(email, password);
 			setIsAuth(true);
-			navigate('/dashboard/intro');
+			navigate('/services');
 			Swal.fire({
 				title: 'Success',
 				text: 'Registration is successful',
