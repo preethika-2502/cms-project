@@ -383,5 +383,4 @@ function General() {
         </div>
     );
 }
-
 export default General;
