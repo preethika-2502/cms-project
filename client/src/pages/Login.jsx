@@ -1,5 +1,5 @@
 import { useState, useContext } from 'react';
-import AuthContext from "../context/Authcontext";
+import AuthContext from "../context/Authcontext.jsx";
 export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
