@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import AuthContext from '../context/Authcontext';// 🔥 Import navigate
 import React, { useState, useContext } from 'react';
-function Signup(props) {
+
+export default function Signup(props) {
     const navigate = useNavigate(); // 🔥 Hook for navigation
     const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
@@ -90,5 +91,3 @@ function Signup(props) {
         </div>
     );
 }
-
-export default Signup;
